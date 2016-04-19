@@ -135,7 +135,6 @@ extension LinkedList : SequenceType {
     }
 }
 
-
 extension LinkedList {
     func reverse() -> LinkedList {
         let list = LinkedList(list: self)

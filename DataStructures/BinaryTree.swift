@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class BinaryTreeNode<T:Equatable>: DataNode<T> {
+    var left: BinaryTreeNode?
+    var right: BinaryTreeNode?
+}
+
+class BinaryTree<T:Equatable> {
+    
+    typealias Node = BinaryTreeNode<T>
+    
+    
+    
+}
