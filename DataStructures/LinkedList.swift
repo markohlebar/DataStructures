@@ -10,6 +10,10 @@ import Foundation
 
 class LinkedListNode<T:Equatable>: DataNode<T>  {
     var next: LinkedListNode?
+    
+    override init(data: T?) {
+        super.init(data: data)
+    }
 }
 
 class LinkedList<T:Equatable> {
@@ -32,8 +36,7 @@ class LinkedList<T:Equatable> {
     }
     
     func append(data: T) {
-        let node = Node()
-        node.data = data
+        let node = Node(data: data)
 
         if isEmpty() {
             head = node

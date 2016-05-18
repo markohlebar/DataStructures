@@ -8,7 +8,11 @@
 
 import Foundation
 
-class DataNode<T:Equatable> {
+class DataNode<T> {
     var data:T?
+    
+    init(data:T? = nil) {
+        self.data = data
+    }
 }
 
